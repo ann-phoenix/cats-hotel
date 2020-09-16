@@ -266,7 +266,7 @@ gulp.task("webp", function () {
 		.src("src/images/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)")
 		.pipe(size())
 		.pipe(webp({
-			quality: 75,
+			quality: 100,
 			method: 6,
 		}))
 		.pipe(gulp.dest("build/images"))

@@ -28,11 +28,31 @@ h6 {
   padding: 0;
 }
 
+ul,
+li,
+ol{
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button:focus,
 input:focus {
   outline: transparent;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body{
+  font-size: 16px;
+  line-height: 22px;
+  @include l400;
+  color: $dark;
 }
