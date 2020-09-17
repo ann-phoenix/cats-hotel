@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> @@include('components/_head.html')
 
-<body> @@include('components/_header.html') 
+<body> @@include('components/_header.html')
   <!--intro-->
   <section class="intro">
     <div class="container">
@@ -56,8 +56,50 @@
       </div>
     </div>
   </section>
-  
-  @@include('components/_footer.html') @@include('components/_scripts.html')
+  <!--rooms-->
+  <section class="rooms">
+    <div class="container">
+      <h2 class="rooms__title title">Hомера</h2>
+      <div class="rooms__slider">
+        <a class="rooms__slide" href="#">
+          <div class="rooms__slide-img" style="background-image: url(images/slide-1.jpg);"></div>
+          <div class="rooms__slide-box">
+            <h6 class="rooms__slide-title">Эконом плюс</h6>
+            <ul class="rooms__slide-list">
+              <li class="rooms__slide-item"> <span>Площадь - 0,90 м2</span> </li>
+              <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) — 90х100х180 см</span> </li>
+              <li class="rooms__slide-item"> <span>Цена за сутки: 200₽</span> </li>
+            </ul>
+            <button class="rooms__slide-button btn">Забронировать</button>
+          </div>
+        </a>
+        <a class="rooms__slide" href="#">
+          <div class="rooms__slide-img" style="background-image: url(images/slide-2.jpg);"></div>
+          <div class="rooms__slide-box">
+            <h6 class="rooms__slide-title">Комфорт</h6>
+            <ul class="rooms__slide-list">
+              <li class="rooms__slide-item"> <span>Площадь - 1,13 м2</span> </li>
+              <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) - 100х125х180 см</span> </li>
+              <li class="rooms__slide-item"> <span>Цена за сутки: 250₽</span> </li>
+            </ul>
+            <button class="rooms__slide-button btn">Забронировать</button>
+          </div>
+        </a>
+        <a class="rooms__slide" href="#">
+          <div class="rooms__slide-img" style="background-image: url(images/slide-3.jpg);"></div>
+          <div class="rooms__slide-box">
+            <h6 class="rooms__slide-title">Сьют</h6>
+            <ul class="rooms__slide-list">
+              <li class="rooms__slide-item"> <span>Площадь - 1,56 м2</span> </li>
+              <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) - 125х125х180 см</span> </li>
+              <li class="rooms__slide-item"> <span>Цена за сутки: 350₽</span> </li>
+            </ul>
+            <button class="rooms__slide-button btn">Забронировать</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> @@include('components/_footer.html') @@include('components/_scripts.html')
 </body>
 
 </html>
