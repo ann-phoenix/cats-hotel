@@ -28,9 +28,19 @@ h6 {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+
 ul,
 li,
-ol{
+ol {
   list-style: none;
 }
 
@@ -44,15 +54,26 @@ input:focus {
   outline: transparent;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-body{
+body {
   font-size: 16px;
   line-height: 22px;
   @include l400;
   color: $dark;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 43px;
+  @include r700;
+}
+
+.page-section{
+  padding: 140px 0;
 }

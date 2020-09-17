@@ -45,8 +45,15 @@
 .intro {
 	margin-top: 20px;
 	padding: 153px 0;
-	background: url('../images/intro.jpg') no-repeat center center;
+	background-image: url('../images/intro.jpg');
+	background-position: center 50px;
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+
+	&__box {
+		padding-left: 80px;
+	}
 
 	&__box-location {
 		font-size: 14px;
@@ -81,27 +88,83 @@
 	position: relative;
 	transition: all .5s;
 
-	&:after{
+	&:after {
 		position: absolute;
 		content: '';
 		background: url('../images/paw.svg') no-repeat;
 		width: 36px;
 		height: 36px;
 		right: 7px;
-    top: 50%;
+		top: 50%;
 		transform: translateY(-50%);
 		transition: all .5s;
 	}
 
-	&:hover{
+	&:hover {
 		background-color: $orange;
 		color: #fff;
 	}
 
-	&:hover:after{
+	&:hover:after {
 		background: url('../images/paw-white.svg') no-repeat;
 	}
 }
 
 //end intro
+//start benefits
+.benefits {
+	position: relative;
+	&:after{
+		position: absolute;
+		content: '';
+		background: url('../images/paw-big.svg');
+		width: 405px;
+		height: 390px;
+		top: -15px;
+    right: 0;
+    z-index: -1;
+	}
+	&__inner {
+		justify-content: flex-start;
+    flex-wrap: wrap;
+		margin-left: -30px;
+		display: flex;
+	}
+
+	&__title {
+		margin-bottom: 70px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		max-width: 370px;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, .25);
+		border-radius: 8px;
+		padding: 30px;
+		flex-basis: calc(33.3333% - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
+		transition: all .5s;
+		background: #fff;
+	}
+
+	&__item:hover{
+		box-shadow: 0px 0px 25px rgba(250, 198, 99, .5);
+	}
+	&__item-icon {
+		width: 91px;
+		height: 91px;
+		margin-bottom: 25px;
+	}
+
+	&__item-title {
+		font-size: 22px;
+		line-height: 31px;
+		@include r700;
+		margin-bottom: 20px;
+	}
+}
+
+//end benefits
 @import 'media';

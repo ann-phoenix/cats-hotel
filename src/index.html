@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-@@include('components/_head.html')
+<html lang="en"> @@include('components/_head.html')
 
-<body>
-  @@include('components/_header.html')
-<section class="intro">
-<div class="container">
-  <div class="intro__box">
-    <p class="intro__box-location">Санкт-Петербург</p>
-    <h1 class="intro__box-title">Котейка</h1>
-    <p class="intro__box-description">Уютная гостиница для котов и кошек</p>
-    <button class="intro__box-btn btn">Забронировать</button>
-  </div>
-</div>
-</section>
-
-
-  @@include('components/_footer.html')
-  @@include('components/_scripts.html')
+<body> @@include('components/_header.html') 
+  <!--intro-->
+  <section class="intro">
+    <div class="container">
+      <div class="intro__box">
+        <p class="intro__box-location">Санкт-Петербург</p>
+        <h1 class="intro__box-title">Котейка</h1>
+        <p class="intro__box-description">Уютная гостиница для котов и кошек</p>
+        <button class="intro__box-btn btn">Забронировать</button>
+      </div>
+    </div>
+  </section>
+  <!--benefits-->
+  <section class="benefits page-section">
+    <div class="container">
+      <h2 class="benefits__title title">Почему мы?</h2>
+      <div class="benefits__inner">
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/temperature.svg);"></div>
+          <h6 class="benefits__item-title">Комфортная температура</h6>
+          <p class="benefits__item-text">Во всех номерах поддерживается комфортная температура в пределах 23 - 25
+            градусов. В каждом номере можно дополнительно отрегулировать температуру. </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/camera.svg);"></div>
+          <h6 class="benefits__item-title">Видеонаблюдение</h6>
+          <p class="benefits__item-text"> Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем
+            со своего смартфона или компьютера. </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/taxi.svg);"></div>
+          <h6 class="benefits__item-title">Услуги Зоотакси</h6>
+          <p class="benefits__item-text"> Мы приедем за вашим питомцем в любой район Санкт-Петербурга. </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/food.png);"></div>
+          <h6 class="benefits__item-title">Сбалансированное питание</h6>
+          <p class="benefits__item-text"> Вы можете привезти свой корм или доверить рацион своего питомца нашим
+            профессионалам. </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/promenade.svg);"></div>
+          <h6 class="benefits__item-title">Ежедневные прогулки</h6>
+          <p class="benefits__item-text"> По вашему желанию мы выгуливаем вашего питомца два раза в день на
+            специализированной закрытой территории. </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__item-icon" style="background-image: url(images/health.svg);"></div>
+          <h6 class="benefits__item-title">Лучшие ветеринары</h6>
+          <p class="benefits__item-text"> В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в
+            случае необходимости. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  @@include('components/_footer.html') @@include('components/_scripts.html')
 </body>
 
 </html>
