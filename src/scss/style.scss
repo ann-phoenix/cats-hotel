@@ -173,7 +173,6 @@
 //end benefits
 //start rooms
 .rooms {
-	margin-bottom: 50px;
 
 	&__title {
 		margin-bottom: 70px;
@@ -241,7 +240,7 @@
 		margin-bottom: 30px;
 	}
 
-	&__slide-button{
+	&__slide-button {
 		background: $yellow;
 	}
 }
@@ -257,10 +256,12 @@
 	margin: 0;
 	padding: 0;
 }
-.rooms__slider-btnnext{
+
+.rooms__slider-btnnext {
 	right: 0;
 }
-.rooms__slider-btnprev{
+
+.rooms__slider-btnprev {
 	right: 50px;
 }
 
@@ -286,4 +287,87 @@
 }
 
 //end rooms
+//start reviews
+.reviews {
+	margin-bottom: 40px;
+	position: relative;
+
+	&:after{
+		position: absolute;
+		content: '';
+		background: url('../images/paw-big2.svg') no-repeat;
+		width: 350px;
+		height: 345px;
+		top: 0;
+		right: 150px;
+		z-index: -1;
+	}
+	&__title {
+		margin-bottom: 70px;
+	}
+
+
+	&__slide {
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+		border-radius: 8px;
+		padding: 35px 35px 35px 70px;
+		max-width: 470px;
+		transition: all .3s;
+		background: #fff;
+		z-index: 5;
+	}
+
+	&__slide:hover {
+		box-shadow: 0px 0px 25px rgba(250, 198, 99, .5);
+	}
+
+
+	&__slide-text {
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	&__slide-text:before {
+		position: absolute;
+		content: '';
+		background: url('../images/quote.svg') no-repeat;
+		width: 27px;
+		height: 56px;
+		left: -30px;
+		top: 0;
+	}
+
+	&__slide-info {
+		display: flex;
+		justify-content: space-between;
+		color: $gray;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	//style slick-slider
+	.slick-list.draggable {
+		padding: 30px 0px 30px 10px;
+	}
+
+	&__slider-btn {
+		position: absolute;
+		bottom: -20px;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__slider-btnnext {
+		right: 0;
+	}
+
+	&__slider-btnprev {
+		right: 50px;
+	}
+}
+
+//end reviews
 @import 'media';
