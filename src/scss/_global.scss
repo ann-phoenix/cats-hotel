@@ -62,6 +62,22 @@ body {
   color: $dark;
 }
 
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
 .title {
   text-align: center;
   font-size: 36px;

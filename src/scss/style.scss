@@ -4,7 +4,7 @@
 
 //start header
 .header {
-	position: fixed;
+	// position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -123,7 +123,7 @@
 		width: 405px;
 		height: 390px;
 		top: -15px;
-		right: 0;
+		right: 115px;
 		z-index: -1;
 	}
 
@@ -173,7 +173,6 @@
 //end benefits
 //start rooms
 .rooms {
-
 	&__title {
 		margin-bottom: 70px;
 	}
@@ -299,7 +298,7 @@
 		width: 350px;
 		height: 345px;
 		top: 0;
-		right: 150px;
+		right: 265px;
 		z-index: -1;
 	}
 
@@ -450,7 +449,7 @@
 		justify-content: space-between;
 	}
 
-	&-bottom{
+	&-bottom {
 		padding: 17px 0;
 	}
 
@@ -483,4 +482,191 @@
 }
 
 //end footer
+//start catalog
+.catalog {
+	padding-top: 70px;
+
+	&-top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 60px;
+		align-items: center;
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	&__aside {
+		min-width: 215px;
+		margin-right: 90px;
+	}
+
+	&__aside-item {
+		margin-bottom: 40px;
+	}
+
+	&__aside-title {
+		margin-bottom: 20px;
+	}
+
+	&__aside-input {
+		width: 100px;
+		border: 1px solid #c4c4c4;
+		height: 24px;
+		padding: 0 5px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__aside-input+&__aside-input {
+		margin-left: 10px;
+	}
+
+	&__aside-buttons {
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	&__aside-btn {
+		border: none;
+		background: #fff;
+		padding: 15px 55px 17px 56px;
+		border: 2px solid $yellow;
+		border-radius: 25px;
+		margin-bottom: 15px;
+		transition: all .5s;
+		cursor: pointer;
+		display: inline-block;
+		@include l700;
+	}
+
+	&__aside-btn:hover {
+		background: $yellow;
+
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item-wrapper {
+		width: 270px;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, .4);
+		margin-bottom: 30px;
+		transition: all .3s;
+		border-radius: 6px;
+	}
+
+	&__item-wrapper:hover {
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, .7);
+	}
+
+	&__item-img {
+		display: flex;
+	}
+
+	&__item-info {
+		padding: 20px 18px 0px 18px;
+		min-height: 190px;
+	}
+
+	&__item-title {
+		@include r700;
+		margin-bottom: 15px;
+	}
+
+	&__item-paragraph {
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 10px;
+
+		span {
+			font-size: 18px;
+			line-height: 22px;
+			@include l500;
+		}
+	}
+
+	&__item-paragraph:last-child {
+		margin-bottom: 15px;
+	}
+
+	&__item-paragraph-img {
+		margin-left: 8px;
+	}
+
+
+	&__link {
+		cursor: pointer;
+		border: none;
+		border: 2px solid $orange;
+		padding: 15px 80px 17px 51px;
+		background: $orange;
+		color: #fff;
+		box-shadow: 0px 5px 25px rgba(26, 33, 47, .1);
+		border-radius: 25px;
+		@include l600;
+		font-size: 14px;
+		line-height: 1;
+		position: relative;
+		transition: all .5s;
+		display: inline-block;
+		margin: 5px 20px 25px 20px;
+
+		margin-bottom: auto;
+	}
+
+	&__link:after {
+		position: absolute;
+		content: '';
+		background: url('../images/paw-small.svg') no-repeat;
+		width: 34px;
+		height: 34px;
+		right: 6px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__link:hover {
+		background-color: #fff;
+		color: #000;
+	}
+
+	&__item-inner {
+		border: 1px solid #E1E1E1;
+		border-top: none;
+		border-radius: 0 0 6px 6px;
+	}
+
+}
+
+.aside-filter__content-label {
+	display: block;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.select-item {
+	cursor: pointer;
+}
+
+.aside-btn {
+	padding: 15px 36px 17px;
+}
+
+.outfit {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+
+
+//end catalog
+
+
 @import 'media';
