@@ -549,28 +549,38 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		margin-left: -22px;
 	}
 
 	&__item-wrapper {
 		width: 270px;
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, .4);
-		margin-bottom: 30px;
 		transition: all .3s;
 		border-radius: 6px;
+		margin-bottom: 22px;
+		width: calc(33.333333% - 22px);
+		margin-left: 22px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__item-wrapper:hover {
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, .7);
 	}
 
+
 	&__item-img {
 		display: flex;
+		width: 100%;
+		border-radius: 6px 6px 0 0;
+	}
+
+	&__item-inner {
+		border-radius: 0 0 6px 6px;
 	}
 
 	&__item-info {
 		padding: 20px 18px 0px 18px;
-		min-height: 190px;
 	}
 
 	&__item-title {
@@ -614,9 +624,7 @@
 		position: relative;
 		transition: all .5s;
 		display: inline-block;
-		margin: 5px 20px 25px 20px;
-
-		margin-bottom: auto;
+		margin: 5px 20px 15px;
 	}
 
 	&__link:after {
@@ -635,13 +643,11 @@
 		color: #000;
 	}
 
-	&__item-inner {
-		border: 1px solid #E1E1E1;
-		border-top: none;
-		border-radius: 0 0 6px 6px;
-	}
 
 }
+
+
+
 
 .aside-filter__content-label {
 	display: block;
@@ -664,9 +670,97 @@
 	margin-bottom: 5px;
 }
 
-
-
 //end catalog
+
+//star product__slider
+.product__slider {
+	height: 550px;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		background: url('../images/paw-big.svg') no-repeat;
+		width: 405px;
+		height: 386px;
+		top: 40px;
+		right: 0;
+		transform: rotate(197deg);
+		z-index: -1;
+	}
+
+	&-info {
+		position: absolute;
+		top: -6px;
+		left: 550px;
+	}
+
+	&-preview {
+		margin-bottom: 22px;
+		cursor: pointer;
+	}
+
+	&-title {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	p {
+		margin-bottom: 15px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	&-icon {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	&-imgbig {
+		max-width: 500px;
+		width: 100%;
+		height: 396px;
+		border-radius: 8px;
+		object-fit: cover;
+		background-position: center;
+	}
+
+	&-previewimg {
+		max-width: 70px;
+		width: 100%;
+		height: 112px;
+		object-fit: cover;
+		border-radius: 4px;
+		opacity: .5;
+	}
+
+	&-img {
+		margin-right: 8px;
+	}
+
+	&-btn {
+		display: inline-block;
+	}
+
+	span {
+		@include l700;
+	}
+}
+
+.slider-class {
+	float: right;
+	width: 90%;
+}
+
+.preview-class {
+	height: 100%;
+	width: 60%;
+}
+
+//end product__slider
+
+
 
 
 @import 'media';
