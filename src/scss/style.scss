@@ -4,7 +4,7 @@
 
 //start header
 .header {
-	// position: fixed;
+	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -44,7 +44,6 @@
 //end header
 //start intro
 .intro {
-	margin-top: 20px;
 	padding: 153px 0;
 	background-image: url('../images/intro.jpg');
 	background-position: center 50px;
@@ -384,6 +383,7 @@
 
 	&__info-title {
 		margin-bottom: 50px;
+		text-align: left;
 	}
 
 	&__info-item {
@@ -735,6 +735,7 @@
 		opacity: .5;
 	}
 
+
 	&-img {
 		margin-right: 8px;
 	}
@@ -758,8 +759,202 @@
 	width: 60%;
 }
 
+.slick-current .product__slider-previewimg {
+	opacity: 1;
+}
+
 //end product__slider
 
+//start modal
+.modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(255, 255, 255, .9);
+	top: 0px;
+	left: 0;
+	z-index: 2000;
+	display: none;
+	overflow-y: auto;
+	padding: 75px 15px;
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		height: auto;
+		align-items: center;
+	}
+
+	&__content {
+		background-color: #fff;
+		width: 570px;
+		padding: 70px 70px 0 70px;
+		position: relative;
+		transform: scale(.5);
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, .25);
+		border-radius: 10px;
+		opacity: 0;
+		transition: transform .5s ease-out, opacity .5s ease-out;
+		overflow: hidden;
+	}
+
+	&__content:after {
+		position: absolute;
+		content: '';
+		background: url('../images/paw-modal.svg') no-repeat;
+		width: 152px;
+		height: 158px;
+		top: -43px;
+		left: -48px;
+	}
+
+	&__content-thanks {
+		position: relative;
+	}
+
+	&__content-thanks:after {
+		position: absolute;
+		content: '';
+		background: url('../images/paw-modal.svg') no-repeat;
+		width: 152px;
+		height: 158px;
+		top: inherit;
+		bottom: -37px;
+		left: -26px;
+		transform: rotate(243deg);
+	}
+
+	&__title {
+		font-size: 28px;
+		line-height: 33px;
+		@include r700;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__title-thanks {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+	}
+
+	&__btn-thanks {
+		padding: 16px 70px 16px 35px;
+	}
+
+
+
+	&__close {
+		position: absolute;
+		content: '';
+		width: 16px;
+		height: 16px;
+		top: 40px;
+		right: 40px;
+		z-index: 1;
+		border: none;
+		background: none;
+		padding: 0;
+		cursor: pointer;
+		transition: transform .5s linear;
+
+		&:hover {
+			transform: rotate(180deg);
+		}
+	}
+
+	&.show {
+		display: block;
+	}
+}
+
+.form__group {
+	margin-bottom: 20px;
+	width: 100%;
+
+
+	&-date {
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-right: 8px;
+		}
+	}
+
+	&-dateinput {
+		font-size: 16px;
+		line-height: 19px;
+		padding: 20px;
+		width: 50%;
+		border-radius: 25px;
+		border: 1px solid $gray;
+	}
+}
+
+.form__input {
+	font-size: 16px;
+	line-height: 19px;
+	padding: 20px;
+	width: 100%;
+	border-radius: 25px;
+	border: 1px solid $gray;
+
+	&-small {
+		width: 129px;
+		margin-bottom: 0;
+	}
+}
+
+.form__input:placeholder {
+	color: $gray;
+}
+
+.form__groups {
+	display: flex;
+	align-items: baseline;
+
+	&-col {
+		width: 321px;
+		margin-left: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	p {
+		margin-right: 18px;
+	}
+
+	label {
+		margin-right: 6px;
+	}
+}
+
+.form__groups {
+	.form__group {
+		margin-bottom: 0;
+	}
+}
+
+
+.form__btn {
+	display: flex;
+	margin: 50px auto 70px;
+	background: $yellow;
+}
+
+.form__btn:hover {
+	background: $orange;
+	color: #fff;
+}
+
+.form__btn.modal__btn-thanks {
+	margin: 50px auto 43px;
+}
 
 
 
