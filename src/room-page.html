@@ -28,7 +28,7 @@
                     <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
                   <p>Цена за сутки: <span>600₽</span> </p>
                   <div>
-                    <a class="product__slider-btn btn" href="#">Забронировать</a>
+                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -52,7 +52,7 @@
                     <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
                   <p>Цена за сутки: <span>600₽</span> </p>
                   <div>
-                    <a class="product__slider-btn btn" href="#">Забронировать</a>
+                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@
                     <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
                   <p>Цена за сутки: <span>600₽</span> </p>
                   <div>
-                    <a class="product__slider-btn btn" href="#">Забронировать</a>
+                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@
   </div>
   <!--modals-->
   <!--modal-1-->
-  <div class="modal">
+  <div class="modal" id="becomeClientModal">
     <div class="modal__inner">
       <div class="modal__content">
         <h4 class="modal__title">Забронировать номер</h4>
@@ -219,14 +219,14 @@
           </div>
           <button class="form__btn btn" type="submit"> Отправить заявку </button>
         </form>
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-modal-close="">
           <img src="images/close.svg" alt="close">
         </button>
       </div>
     </div>
   </div>
   <!--modal-2-->
-  <div class="modal modal__thanks">
+  <div class="modal modal__thanks" id="thanksModal">
     <div class="modal__inner">
       <div class="modal__content modal__content-thanks">
         <h4 class="modal__title modal__title-thanks"> Спасибо за заявку!</h4>
