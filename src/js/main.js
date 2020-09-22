@@ -1,6 +1,14 @@
 $(function () {
 
-	/*Rooms slider  https://kenwheeler.github.io/slick/ */
+	let intro = $('#intro');
+	let header = $('#header');
+	let introH = intro.innerHeight();
+	let headerH = header.innerHeight();
+	let scrollTop = $(window).scrollTop();
+	let headerMenuToggle = $('#headerMenuToggle');
+	let headerMenu = $('#header__menu');
+
+	/* Rooms slider  https://kenwheeler.github.io/slick/ */
 
 	$('.rooms__slider').slick({
 		infinite: true,
@@ -14,7 +22,7 @@ $(function () {
 		nextArrow: '<button class="rooms__slider-btn rooms__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button > ',
 	});
 
-	/*Reviews slider  */
+	/* Reviews slider  */
 
 	$('.reviews__slider').slick({
 		infinite: true,
@@ -51,7 +59,7 @@ $(function () {
 		asNavFor: '.preview-class'
 	});
 
-	/*Modals*/
+	/* Modals */
 	$('[data-modal]').on('click', function (event) {
 		event.preventDefault();
 		let modal = $(this).data('modal');
@@ -99,29 +107,7 @@ $(function () {
 		}, 500);
 	}
 
-	/*Burger*/
-
-	let headerMenuToggle = $('#headerMenuToggle');
-	let headerMenu = $('#header__menu');
-
-	headerMenuToggle.on('click', function (event) {
-		event.preventDefault();
-		$('body').toggleClass('show-header__menu');
-		$(this).toggleClass('active');
-		headerMenu.toggleClass('show');
-	});
-	$(window).on('resize', function () {
-		$('body').removeClass('show-header__menu');
-		headerMenuToggle.removeClass('active');
-		headerMenu.removeClass('show');
-	});
-
-	/* Header class on scroll */
-	let intro = $('#intro');
-	let header = $('#header');
-	let introH = intro.innerHeight();
-	let headerH = header.innerHeight();
-
+	/* Header scroll */
 
 	headerScroll();
 	$(window).on('scroll resize', function () {
@@ -140,5 +126,34 @@ $(function () {
 			header.removeClass('header--dark');
 		}
 	}
+
+	/* Scroll to sections */
+
+	$('[data-scroll]').on('click', function (event) {
+		event.preventDefault();
+		let scrollEl = $(this).data('scroll');
+		let scrollElPos = $(scrollEl).offset().top;
+		$('body').removeClass('show-header__menu');
+		headerMenuToggle.removeClass('active');
+		headerMenu.removeClass('show');
+		$('html, body').animate({
+			scrollTop: scrollElPos - headerH
+		}, 500)
+	});
+
+	/* Burger */
+
+	headerMenuToggle.on('click', function (event) {
+		event.preventDefault();
+		$('body').toggleClass('show-header__menu');
+		$(this).toggleClass('active');
+		headerMenu.toggleClass('show');
+	});
+	$(window).on('resize', function () {
+		$('body').removeClass('show-header__menu');
+		headerMenuToggle.removeClass('active');
+		headerMenu.removeClass('show');
+	});
+
 
 });

@@ -11,7 +11,7 @@
 	z-index: 1000;
 	width: 100%;
 	background: #fff;
-
+	transition: all .5s;
 
 	&__inner {
 		display: flex;
@@ -19,25 +19,23 @@
 		align-items: center;
 		height: 76px;
 	}
-}
 
-.menu {
-	&__list {
+	&__menu-list {
 		display: flex;
 		list-style: none;
 	}
 
-	&__item {
+	&__menu-item {
 		margin-left: 30px;
 	}
 
-	&__link {
+	&__menu-link {
 		@include l600;
 		transition: all .5s;
 	}
 
-	&__link:hover {
-		color: $orange;
+	&__menu-link:hover {
+		text-decoration: underline;
 	}
 
 }
@@ -55,6 +53,8 @@ body.show-header__menu .header,
 	border: 0;
 	color: transparent;
 	position: relative;
+	align-self: flex-start;
+	top: 7px;
 	width: 30px;
 	height: 23px;
 	cursor: pointer;
@@ -62,8 +62,8 @@ body.show-header__menu .header,
 	&-line {
 		width: 30px;
 		height: 2px;
-		background-color: $orange;
 		display: block;
+		background-color: $dark;
 		margin: 4px 0;
 		transition: transform .3s ease-out;
 	}
@@ -71,6 +71,7 @@ body.show-header__menu .header,
 	&-line:first-child {
 		width: 20px;
 		margin-left: auto;
+		background-color: $orange;
 	}
 
 	&.active &-line:nth-child(1),

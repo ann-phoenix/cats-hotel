@@ -1,5 +1,44 @@
+@media (max-width: 760px) {
 
+	//header
+	.header__menu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		flex-direction: column;
+		background-color: rgba(143, 143, 143, 1.4);
+		padding-top: 8px;
+		transform: translateX(100%);
+		transition: transform .5s ease-out;
+		height: calc(100vh - 50px); //scroll burger
+		overflow: auto; //scroll burger
 
+		&.show {
+			transform: translateX(0);
+		}
+	}
 
+	.burger {
+		display: block;
+	}
 
+	.header__inner {
+		height: 60px;
+	}
 
+	.header__menu-list{
+		flex-direction: column;
+	}
+
+	.header__menu-link {
+		display: block;
+		text-align: right;
+		padding: 10px 15px;
+	}
+	img{
+		width: 75%;
+	}
+}
