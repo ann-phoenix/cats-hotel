@@ -41,8 +41,8 @@ $(function () {
 
 	$('.slider-class').slick({
 		arrows: false,
-		fade: true,
 		dots: false,
+		fade: true,
 		lazyLoad: 'progressive',
 		slidesToScroll: 1,
 		slidesToShow: 1,
@@ -97,6 +97,48 @@ $(function () {
 			$('body').removeClass('no-scroll');
 			modal.removeClass('show');
 		}, 500);
+	}
+
+	/*Burger*/
+
+	let headerMenuToggle = $('#headerMenuToggle');
+	let headerMenu = $('#header__menu');
+
+	headerMenuToggle.on('click', function (event) {
+		event.preventDefault();
+		$('body').toggleClass('show-header__menu');
+		$(this).toggleClass('active');
+		headerMenu.toggleClass('show');
+	});
+	$(window).on('resize', function () {
+		$('body').removeClass('show-header__menu');
+		headerMenuToggle.removeClass('active');
+		headerMenu.removeClass('show');
+	});
+
+	/* Header class on scroll */
+	let intro = $('#intro');
+	let header = $('#header');
+	let introH = intro.innerHeight();
+	let headerH = header.innerHeight();
+
+
+	headerScroll();
+	$(window).on('scroll resize', function () {
+		headerScroll();
+	});
+
+	function headerScroll() {
+		introH = intro.innerHeight();
+		headerH = header.innerHeight();
+
+		let scrollTop = $(this).scrollTop();
+
+		if (scrollTop >= (introH - headerH)) {
+			header.addClass('header--dark');
+		} else {
+			header.removeClass('header--dark');
+		}
 	}
 
 });

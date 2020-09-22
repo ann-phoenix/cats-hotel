@@ -1,25 +1,31 @@
-<header class="header">
+<header class="header" id="header">
 	<div class="container">
 		<div class="header__inner">
-			<a class="logo" href="#">
+			<a class="logo" href="#" data-scroll="#intro">
 				<img src="images/logo.svg" alt="">
 			</a>
-			<nav class="menu">
+			<nav class="menu" id="header__menu">
 				<ul class="menu__list">
 					<li class="menu__item">
-						<a class="menu__link" href="#">Почему мы?</a>
+						<a class="menu__link active" href="#" data-scroll="#benefits">Почему мы?</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Номера</a>
+						<a class="menu__link" href="#" data-scroll="#rooms">Номера</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Отзывы</a>
+						<a class="menu__link" href="#" data-scroll="#reviews">Отзывы</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Как нас найти</a>
+						<a class="menu__link" href="#" data-scroll="#contacts">Как нас найти</a>
 					</li>
 				</ul>
 			</nav>
+			<button class="burger" id="headerMenuToggle" type="button">
+				<span class="burger-line"></span>
+				<span class="burger-line"></span>
+				<span class="burger-line"></span>
+				<span class="burger-line"></span>
+			</button>
 		</div>
 	</div>
 </header>

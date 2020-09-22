@@ -85,10 +85,11 @@ body {
   @include r700;
 }
 
-.page-section{
-  padding-top: 140px;
+.page-section {
+  padding-bottom: 140px;
 }
 
-body.no-scroll{
-overflow: hidden;
+body.no-scroll,
+body.show-header__menu {
+  overflow: hidden;
 }
