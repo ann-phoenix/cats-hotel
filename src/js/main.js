@@ -155,5 +155,8 @@ $(function () {
 		headerMenu.removeClass('show');
 	});
 
+	/* Jquery form styler  https://www.npmjs.com/package/jquery-form-styler */
+	$('.filter-style').styler();
+
 
 });
