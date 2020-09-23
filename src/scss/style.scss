@@ -736,7 +736,7 @@ body.show-header__menu .header,
 
 
 .jq-checkbox.checked .jq-checkbox__div {
-	width: 9px;
+	width: 10px;
 	height: 9px;
 	margin: 4px 2px 2px 4px;
 	border-bottom: none;
@@ -745,6 +745,120 @@ body.show-header__menu .header,
 	background: url('../images/checked.svg') no-repeat;
 }
 
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active {
+	background: transparent;
+	box-shadow: none;
+}
+
+.jq-checkbox.focused {
+	border: 1px solid $gray;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+	border: none;
+}
+
+.jq-selectbox__select {
+	padding: 12px 62px 8px 20px;
+	box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+	border: none;
+	background: #fff;
+	font-size: 14px;
+	line-height: 17px;
+	color: $dark;
+	@include l500;
+	text-shadow: none;
+	height: auto;
+	border-radius: 0;
+}
+
+.jq-selectbox__select-text {
+	overflow: visible;
+}
+
+.jq-selectbox__trigger {
+	border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	content: '';
+	background: url('../images/checked-select.svg') no-repeat;
+	top: 17px;
+	right: 12px;
+	width: 15px;
+	height: 10px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+.jq-selectbox__select{
+	box-shadow: none;
+}
+.jq-selectbox__dropdown {
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
+	line-height: 17px;
+	margin: -7px 0 0;
+	box-shadow: none;
+}
+
+.jq-selectbox li {
+	transition: all .3s;
+	position: relative;
+	padding: 5px 15px 6px 20px;
+}
+
+
+.jq-selectbox li:hover {
+	background-color: $yellow;
+	color: $dark;
+}
+
+.option-up,
+.option-down {
+	position: relative;
+}
+
+.option-up:before,
+.option-down:before {
+	position: absolute;
+	content: '';
+	background: url('../images/arrow-up.png') no-repeat;
+	width: 15px;
+	height: 12px;
+}
+
+.option-up:before {
+	top: 7px;
+	left: 10px;
+}
+
+.option-down:before {
+	transform: rotate(180deg);
+	top: 7px;
+	left: 3px;
+}
+
+.jq-selectbox li.selected {
+	background-color: $gray;
+	color: $dark;
+}
+
+.jq-selectbox__select {
+	background: 0 0;
+	box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+	top: -8px;
+}
+
+.jq-selectbox__select:active,
+.jq-selectbox__select:hover {
+	background: 0 0;
+	box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+	top: -8px;
+}
 
 
 //end catalog
