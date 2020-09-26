@@ -1,4 +1,56 @@
+@media (max-width: 1600px) {
+
+	//benefits
+	.benefits:after {
+		width: 354px;
+		height: 328px;
+		top: -15px;
+		right: -76px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	//benefits
+	.benefits:after {
+		width: 300px;
+		height: 290px;
+		top: -78px;
+		right: -76px;
+	}
+
+	.benefits__inner {
+		margin-left: -20px;
+	}
+
+	.benefits__item {
+		flex-basis: calc(50% - 20px);
+		margin-left: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		padding: 20px 30px 30px 30px;
+	}
+
+	.benefits__item-icon {
+		display: flex;
+		margin: 10px auto;
+	}
+}
+
+
+
 @media (max-width: 760px) {
+
+	.benefits__title,
+	.rooms__title,
+	.reviews__title,
+	.contacts__info-title {
+		margin-bottom: 30px;
+	}
+
+	.page-section {
+		padding-bottom: 75px;
+	}
 
 	//header
 	.header__menu {
@@ -29,7 +81,7 @@
 		height: 60px;
 	}
 
-	.header__menu-list{
+	.header__menu-list {
 		flex-direction: column;
 	}
 
@@ -38,7 +90,26 @@
 		text-align: right;
 		padding: 10px 15px;
 	}
-	img{
+
+	img {
 		width: 75%;
+	}
+
+	//intro
+	.intro {
+		margin-bottom: 75px;
+		padding: 75px 0;
+	}
+
+	.intro__box {
+		padding-left: 30px;
+	}
+
+	//benefits
+	.benefits__item {
+		flex-basis: 100%;
+		max-width: 100%;
+		padding: 5px 15px 15px 15px;
+		margin-bottom: 15px;
 	}
 }

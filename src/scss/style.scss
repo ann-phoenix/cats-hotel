@@ -174,7 +174,7 @@ body.show-header__menu .header,
 	&:after {
 		position: absolute;
 		content: '';
-		background: url('../images/paw-big.svg');
+		background: url('../images/paw-big.svg') center/contain no-repeat;
 		width: 405px;
 		height: 390px;
 		top: -15px;
@@ -196,7 +196,7 @@ body.show-header__menu .header,
 	&__item {
 		display: flex;
 		flex-direction: column;
-		max-width: 370px;
+		width: 370px;
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, .25);
 		border-radius: 8px;
 		padding: 30px;
@@ -240,7 +240,7 @@ body.show-header__menu .header,
 	&__slider:after {
 		position: absolute;
 		content: '';
-		background: url('../images/fish.svg') no-repeat;
+		background: url('../images/fish.svg') center/contain no-repeat;
 		width: 484px;
 		height: 150px;
 		top: -80px;
