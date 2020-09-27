@@ -306,11 +306,11 @@ body.show-header__menu .header,
 
 //style slick-slider
 
-.rooms .slick-list{
+.rooms .slick-list {
 	overflow: visible;
 }
 
-.slick-slide{
+.slick-slide {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -403,9 +403,9 @@ body.show-header__menu .header,
 		content: '';
 		background: url('../images/quote.svg') center/contain no-repeat;
 		width: 27px;
-    height: 56px;
-    left: -45px;
-    top: -20px;
+		height: 56px;
+		left: -45px;
+		top: -20px;
 	}
 
 	&__slide-info {
@@ -460,6 +460,7 @@ body.show-header__menu .header,
 .reviews .slick-active button {
 	background-color: $yellow;
 }
+
 //end reviews
 //start contacts
 .contacts {
@@ -575,14 +576,14 @@ body.show-header__menu .header,
 
 //end footer
 //start catalog
+
 .catalog {
-	padding-top: 70px;
+	padding-top: 100px;
 
 	&-top {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 60px;
-		align-items: center;
 	}
 
 	&__inner {
@@ -757,6 +758,7 @@ body.show-header__menu .header,
 .outfit {
 	display: flex;
 	margin-bottom: 5px;
+	align-items: center;
 }
 
 
@@ -820,7 +822,7 @@ body.show-header__menu .header,
 .jq-selectbox__trigger-arrow {
 	position: absolute;
 	content: '';
-	background: url('../images/checked-select.svg') no-repeat;
+	background: url('../images/checked-select.svg') center/contain no-repeat;
 	top: 17px;
 	right: 12px;
 	width: 15px;
@@ -829,9 +831,11 @@ body.show-header__menu .header,
 	border-right: none;
 	border-left: none;
 }
-.jq-selectbox__select{
+
+.jq-selectbox__select {
 	box-shadow: none;
 }
+
 .jq-selectbox__dropdown {
 	border: none;
 	border-radius: 0;
@@ -899,7 +903,16 @@ body.show-header__menu .header,
 
 //end catalog
 
+//banner
+.banner__link img {
+	width: 100%;
+}
+
 //star product__slider
+.other-rooms {
+	padding-top: 100px;
+}
+
 .product__slider {
 	height: 550px;
 	position: relative;

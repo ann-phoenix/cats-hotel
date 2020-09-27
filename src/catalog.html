@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en"> @@include('components/_head.html')
 
-<body> @@include('components/_header.html') <div class="wrapper">
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#" data-scroll="#intro">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <nav class="header__menu" id="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#" data-scroll="#catalog">Наши номера</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#" data-scroll="#contacts">Как нас найти</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger" id="headerMenuToggle" type="button">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>  
+  
+  <div class="wrapper">
     <div class="content">
       <!--catalog-->
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <div class="catalog-top">
             <h2 class="catalog-top__title title">Наши номера</h2>
@@ -17,7 +43,7 @@
               </select>
             </div>
           </div>
-          <div class="catalog__inner">
+          <div class="catalog__inner" id="intro">
             <aside class="catalog__aside">
               <form class="catalog__aside-form">
                 <div class="catalog__aside-item">
@@ -59,9 +85,9 @@
                 </div>
               </form>
             </aside>
+
+
             <div class="catalog__list">
-
-
               <div class="catalog__item-wrapper">
                 <a class="catalog__item" href="#">
                   <img class="catalog__item-img" src="images/item-1.jpg" alt="">
@@ -196,7 +222,7 @@
         </div>
       </div>
       <!--contacts-->
-      <section class="contacts page-section">
+      <section class="contacts" id="contacts">
         <div class="contacts__inner">
           <div class="contacts__info">
             <h2 class="contacts__info-title title">Как нас найти</h2>

@@ -1,5 +1,4 @@
 $(function () {
-
 	let intro = $('#intro');
 	let header = $('#header');
 	let introH = intro.innerHeight();
@@ -16,8 +15,8 @@ $(function () {
 		slidesToScroll: 1,
 		dots: true,
 		fade: true,
-		// autoplay: true,
-		// autoplaySpeed: 9000,
+		autoplay: true,
+		autoplaySpeed: 9000,
 		prevArrow: '<button class="rooms__slider-btn rooms__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button > ',
 		nextArrow: '<button class="rooms__slider-btn rooms__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button > ',
 		responsive: [{
@@ -40,19 +39,20 @@ $(function () {
 		prevArrow: '<button class="reviews__slider-btn reviews__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button > ',
 		nextArrow: '<button class="reviews__slider-btn reviews__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button > ',
 		responsive: [{
-			breakpoint: 941,
-			settings: {
-				slidesToShow: 1,
+				breakpoint: 941,
+				settings: {
+					slidesToShow: 1,
+				},
 			},
-		},
-		{
-			breakpoint: 761,
-			settings: {
-				slidesToShow: 1,
-				dots: true,
-				arrows: false,
-			}
-		}, ]
+			{
+				breakpoint: 761,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					arrows: false,
+				}
+			},
+		]
 	});
 
 	$('.preview-class').slick({
@@ -64,7 +64,7 @@ $(function () {
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		asNavFor: '.slider-class'
+		asNavFor: '.slider-class',
 	});
 
 	$('.slider-class').slick({
@@ -148,7 +148,6 @@ $(function () {
 	}
 
 	/* Scroll to sections */
-
 	$('[data-scroll]').on('click', function (event) {
 		event.preventDefault();
 		let scrollEl = $(this).data('scroll');

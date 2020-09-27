@@ -62,6 +62,13 @@
 		width: 50%;
 	}
 
+	//catalog
+	.catalog__item-wrapper {
+		margin-bottom: 40px;
+		width: calc(50% - 40px);
+		margin-left: 40px;
+	}
+
 }
 
 @media (max-width: 940px) {
@@ -193,6 +200,25 @@
 		height: 600px;
 	}
 
+	//catalog
+	.catalog__item-wrapper {
+		margin-bottom: 20px;
+		width: 80%;
+	}
+
+	.catalog__item-info {
+		text-align: center;
+	}
+
+	.catalog__link {
+		display: flex;
+		margin: 20px auto;
+	}
+
+	.outfit {
+		justify-content: center;
+	}
+
 }
 
 @media (max-width: 760px) {
@@ -294,10 +320,44 @@
 		margin-top: 10px;
 	}
 
+	// catalog
+	.catalog__aside {
+		min-width: 215px;
+		margin-right: 10px;
+	}
+
+	.catalog__item-info {
+		padding: 15px 18px 0;
+	}
+
+	.catalog__item-title {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.catalog__item-paragraph,
+	.outfit {
+		font-size: 12px;
+	}
+
+	.catalog__item-paragraph-img {
+		width: 60%;
+		margin-left: 2px;
+	}
+
+	.catalog__item-paragraph span {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.catalog__link {
+		padding: 15px 45px 17px 15px;
+		font-size: 12px;
+		margin: 15px auto;
+	}
 }
 
 @media (max-width: 495px) {
-
 
 	.title {
 		font-size: 30px;
@@ -332,5 +392,43 @@
 	.footer-bottom__politics {
 		font-size: 10px;
 		line-height: 12px;
+	}
+
+	//banner
+	.banner__link {
+		display: none;
+	}
+
+	//catalog
+	.catalog-top__title {
+		font-size: 25px;
+		line-height: 1;
+	}
+
+	.catalog__aside {
+		display: none;
+	}
+
+	.catalog__list {
+		margin-left: 0;
+	}
+
+	.catalog__item-wrapper {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.catalog-top {
+		margin-bottom: 30px;
+	}
+
+	.jq-selectbox__select {
+		padding: 12px 20px 8px 20px;
+		font-size: 12px;
+	}
+
+	.jq-selectbox__trigger-arrow {
+		width: 10px;
+		height: 8px;
 	}
 }
