@@ -269,7 +269,7 @@ body.show-header__menu .header,
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, .25);
 		border-radius: 8px;
 		width: 40%;
-		height: 284px;
+		min-height: 200px;
 		padding: 30px 100px;
 		position: absolute;
 		top: 60px;
@@ -306,7 +306,7 @@ body.show-header__menu .header,
 
 //style slick-slider
 
-.slick-list{
+.rooms .slick-list{
 	overflow: visible;
 }
 
@@ -334,7 +334,7 @@ body.show-header__menu .header,
 	right: 50px;
 }
 
-.slick-dots {
+.rooms .slick-dots {
 	list-style: none;
 	justify-content: center;
 	display: flex;
@@ -351,14 +351,13 @@ body.show-header__menu .header,
 	}
 }
 
-.slick-active button {
+.rooms .slick-active button {
 	background-color: $yellow;
 }
 
 //end rooms
 //start reviews
 .reviews {
-	margin-bottom: 40px;
 	position: relative;
 
 	&:after {
@@ -381,7 +380,8 @@ body.show-header__menu .header,
 		box-shadow: 0px 0px 25px rgba(208, 208, 208, .25);
 		border-radius: 8px;
 		padding: 35px 35px 35px 70px;
-		max-width: 470px;
+		max-width: 95%;
+		min-height: 200px;
 		transition: all .3s;
 		background: #fff;
 		z-index: 5;
@@ -395,12 +395,13 @@ body.show-header__menu .header,
 	&__slide-text {
 		position: relative;
 		margin-bottom: 25px;
+		min-height: 155px;
 	}
 
 	&__slide-text:before {
 		position: absolute;
 		content: '';
-		background: url('../images/quote.svg') no-repeat;
+		background: url('../images/quote.svg') center/contain no-repeat;
 		width: 27px;
 		height: 56px;
 		left: -30px;
@@ -417,7 +418,7 @@ body.show-header__menu .header,
 
 	//style slick-slider
 	.slick-list.draggable {
-		padding: 30px 0px 30px 10px;
+		padding: 10px 0px 10px 10px;
 	}
 
 	&__slider-btn {
@@ -439,6 +440,26 @@ body.show-header__menu .header,
 	}
 }
 
+.reviews .slick-dots {
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	margin-top: 25px;
+
+	button {
+		margin-right: 12px;
+		border-radius: 50%;
+		border: none;
+		width: 12px;
+		height: 12px;
+		font-size: 0;
+		cursor: pointer;
+	}
+}
+
+.reviews .slick-active button {
+	background-color: $yellow;
+}
 //end reviews
 //start contacts
 .contacts {

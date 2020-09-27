@@ -8,6 +8,14 @@
 		right: -76px;
 	}
 
+	//reviews
+	.reviews:after {
+		width: 280px;
+		height: 275px;
+		top: -55px;
+		right: 126px;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -42,6 +50,12 @@
 		padding: 30px 45px;
 	}
 
+	//reviews
+	.reviews:after {
+		top: -55px;
+		right: -60px;
+	}
+
 }
 
 @media (max-width: 940px) {
@@ -60,12 +74,81 @@
 		border-radius: 0 0 8px 8px;
 	}
 
-	.rooms__slide-img {
-		width: 80%;
+
+	.rooms__slider .slick-dots {
+		margin-top: 238px;
 	}
 
-	.slick-dots {
-		margin-top: 238px;
+	.rooms__slider:after {
+		width: 270px;
+		height: 164px;
+		top: -87px;
+		left: -22px;
+	}
+
+	.rooms__slider .rooms__slide {
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.rooms__slide-list {
+		list-style: none;
+	}
+
+	.rooms__slide-box,
+	.rooms__slide-img {
+		width: 440px;
+	}
+
+	.rooms__slide-img {
+		height: 220px;
+		border-radius: 8px 8px 0 0;
+	}
+
+	.rooms__slide-box {
+		top: 220px;
+		padding: 15px;
+		text-align: center;
+		height: 210px;
+		border-radius: 0 0 8px 8px;
+	}
+
+	.rooms__slide-item {
+		margin-bottom: 10px;
+	}
+
+	.rooms__slide-item:last-child {
+		margin-bottom: 18px;
+	}
+
+	.rooms__slide-title {
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	.rooms__slide-item span {
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.rooms__slide-button {
+		padding: 15px 50px 15px 10px;
+		font-size: 14px;
+	}
+
+	//reviews
+	.reviews__slider .reviews__slide {
+		display: flex !important;
+		justify-content: center !important;
+		flex-direction: column;
+	}
+
+	.slick-list.draggable {
+		padding: 10px 5px 10px 5px;
+	}
+	.reviews__slide{
+		max-width: 98%;
 	}
 
 }
@@ -144,63 +227,45 @@
 		margin-bottom: 15px;
 	}
 
-	//rooms
-
-	.rooms__slider:after{
-		width: 270px;
-    height: 164px;
-    top: -87px;
-    left: -22px;
-	}
-	.rooms__slide{
-		display: flex;
-		justify-content: center;
+	//reviews
+	.reviews__slide {
+		padding: 20px 20px 20px 25px;
 	}
 
-
-	.rooms__slide-list {
-		list-style: none;
+	.reviews__slide-text:before {
+		width: 16px;
+		height: 16px;
+		left: -20px;
 	}
+
+	.reviews__slide-text {
+		min-height: 100px;
+		font-size: 14px;
+	}
+
+	.reviews__slide-info {
+		font-size: 14px;
+	}
+
+	.reviews .slick-dots {
+		margin-top: 10px;
+	}
+
+}
+
+@media (max-width: 495px) {
 
 	.rooms__slide-box,
 	.rooms__slide-img {
 		width: 100%;
 	}
 
-	.rooms__slide-img {
-		height: 220px;
-		border-radius: 8px 8px 0 0;
+	//reviews
+	.reviews__slide-info {
+		flex-direction: column;
 	}
 
-	.rooms__slide-box {
-		top: 220px;
-		padding: 15px;
-		text-align: center;
-		height: 210px;
-		border-radius: 0 0 8px 8px;
-	}
-
-	.rooms__slide-item{
-		margin-bottom: 10px;
-	}
-
-	.rooms__slide-item:last-child {
-		margin-bottom: 18px;
-	}
-
-	.rooms__slide-title {
-		font-size: 18px;
-		line-height: 20px;
-		margin-bottom: 10px;
-	}
-
-	.rooms__slide-item span{
-		font-size: 14px;
-		line-height: 15px;
-	}
-
-	.rooms__slide-button{
-		padding: 15px 50px 15px 10px;
-		font-size: 14px;
+	.reviews__slide-name {
+		margin-bottom: 3px;
 	}
 }
