@@ -56,6 +56,12 @@
 		right: -60px;
 	}
 
+	//contacts
+	.contacts__info {
+		padding: 70px 80px 70px 80px;
+		width: 50%;
+	}
+
 }
 
 @media (max-width: 940px) {
@@ -147,8 +153,44 @@
 	.slick-list.draggable {
 		padding: 10px 5px 10px 5px;
 	}
-	.reviews__slide{
+
+	.reviews__slide {
 		max-width: 98%;
+	}
+
+	//contacts
+	.contacts__inner {
+		flex-direction: column;
+	}
+
+	.contacts__info-title {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.contacts__info-item {
+		margin-bottom: 15px;
+	}
+
+	.contacts__social-list {
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.contacts__social-item img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.contacts__info {
+		width: 100%;
+		padding: 35px;
+		text-align: center;
+	}
+
+	.contacts__map {
+		width: 100%;
+		height: 600px;
 	}
 
 }
@@ -236,6 +278,7 @@
 		width: 16px;
 		height: 16px;
 		left: -20px;
+		top: -10px;
 	}
 
 	.reviews__slide-text {
@@ -255,6 +298,12 @@
 
 @media (max-width: 495px) {
 
+
+	.title {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
 	.rooms__slide-box,
 	.rooms__slide-img {
 		width: 100%;
@@ -267,5 +316,21 @@
 
 	.reviews__slide-name {
 		margin-bottom: 3px;
+	}
+
+	//footer
+	.footer-bottom__license {
+		padding-left: 8px;
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.footer-bottom__license:before {
+		left: -3px;
+	}
+
+	.footer-bottom__politics {
+		font-size: 10px;
+		line-height: 12px;
 	}
 }
