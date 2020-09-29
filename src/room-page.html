@@ -5,7 +5,7 @@
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#" data-scroll="#intro">
+        <a class="logo" href="index.html">
           <img src="images/logo.svg" alt="">
         </a>
         <nav class="header__menu" id="header__menu">
@@ -14,7 +14,7 @@
               <a class="header__menu-link" href="#" data-scroll="#product__slider">Номер</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#" data-scroll="#intro">Другие номера</a>
+              <a class="header__menu-link" href="#" data-scroll="#rooms">Другие номера</a>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="#" data-scroll="#contacts">Как нас найти</a>
@@ -32,85 +32,64 @@
   </header>
   
   
-  
   <div class="wrapper">
     <div class="content">
-      <!--product__slider-->
-      <section class="other-rooms product__slider page-section " id="product__slider">
+      <!--room-->
+      <section class="room product__slider" id="product__slider">
         <div class="container">
-          <div class="product__slider-inner">
-            <div class="slider slider-single slider-class">
+          <div class="room-inner product__slider-inner">
+            <div class="room-wrapper">
+            <div class="slider slider-single slider-class" id="intro">
               <div class="product__slider-item">
                 <img class="product__slider-imgbig" src="images/slide-big1.jpg" alt="">
-                <div class="product__slider-info">
-                  <h2 class="product__slider-title title">Супер-Люкс</h2>
-                  <p>Размеры (ШхГхВ) - 180х160х180 см</p>
-                  <p>Площадь - 2,88 м2</p>
-                  <p>Оснащение номера</p>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак
-                  </div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/house.svg" alt="">
-                    Домик</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/game.svg" alt="">
-                    Игровой комплекс - 3 яруса</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
-                  <p>Цена за сутки: <span>600₽</span> </p>
-                  <div>
-                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
-                  </div>
-                </div>
               </div>
               <div class="product__slider-item">
                 <img class="product__slider-imgbig" src="images/slide-big3.jpg" alt="">
-                <div class="product__slider-info">
-                  <h2 class="product__slider-title title">Супер-Люкс</h2>
-                  <p>Размеры (ШхГхВ) - 180х160х180 см</p>
-                  <p>Площадь - 2,88 м2</p>
-                  <p>Оснащение номера</p>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак
-                  </div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/house.svg" alt="">
-                    Домик</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/game.svg" alt="">
-                    Игровой комплекс - 3 яруса</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
-                  <p>Цена за сутки: <span>600₽</span> </p>
-                  <div>
-                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
-                  </div>
-                </div>
+                <!-- <div class="product__slider-info"> -->
+                  <!-- <h2 class="product__slider-title title">Супер-Люкс</h2> -->
+                  <!-- <p>Размеры (ШхГхВ) - 180х160х180 см</p> -->
+                  <!-- <p>Площадь - 2,88 м2</p> -->
+                  <!-- <p>Оснащение номера</p> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак -->
+                  <!-- </div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/house.svg" alt=""> -->
+                    <!-- Домик</div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/game.svg" alt=""> -->
+                    <!-- Игровой комплекс - 3 яруса</div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div> -->
+                  <!-- <p>Цена за сутки: <span>600₽</span> </p> -->
+                  <!-- <div> -->
+                    <!-- <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button> -->
+                  <!-- </div> -->
+                <!-- </div> -->
               </div>
               <div class="product__slider-item">
                 <img class="product__slider-imgbig" src="images/slide-big2.jpg" alt="">
-                <div class="product__slider-info">
-                  <h2 class="product__slider-title title">Супер-Люкс</h2>
-                  <p>Размеры (ШхГхВ) - 180х160х180 см</p>
-                  <p>Площадь - 2,88 м2</p>
-                  <p>Оснащение номера</p>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак
-                  </div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/house.svg" alt="">
-                    Домик</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/game.svg" alt="">
-                    Игровой комплекс - 3 яруса</div>
-                  <div class="product__slider-icon"> 
-                    <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
-                  <p>Цена за сутки: <span>600₽</span> </p>
-                  <div>
-                    <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
-                  </div>
-                </div>
+                <!-- <div class="product__slider-info"> -->
+                  <!-- <h2 class="product__slider-title title">Супер-Люкс</h2> -->
+                  <!-- <p>Размеры (ШхГхВ) - 180х160х180 см</p> -->
+                  <!-- <p>Площадь - 2,88 м2</p> -->
+                  <!-- <p>Оснащение номера</p> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак -->
+                  <!-- </div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/house.svg" alt=""> -->
+                    <!-- Домик</div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/game.svg" alt=""> -->
+                    <!-- Игровой комплекс - 3 яруса</div> -->
+                  <!-- <div class="product__slider-icon">  -->
+                    <!-- <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div> -->
+                  <!-- <p>Цена за сутки: <span>600₽</span> </p> -->
+                  <!-- <div> -->
+                    <!-- <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button> -->
+                  <!-- </div> -->
+                <!-- </div> -->
               </div>
             </div>
             <div class="slider slider-nav preview-class">
@@ -122,10 +101,32 @@
                 <img class="product__slider-previewimg" src="images/slide-big2.jpg" alt=""></div>
             </div>
           </div>
+            <div class="product__slider-info">
+              <h2 class="product__slider-title title">Супер-Люкс</h2>
+              <p>Размеры (ШхГхВ) - 180х160х180 см</p>
+              <p>Площадь - 2,88 м2</p>
+              <p>Оснащение номера</p>
+              <div class="product__slider-icon"> 
+                <img class="product__slider-img" src="images/bed.svg" alt=""> Лежак
+              </div>
+              <div class="product__slider-icon"> 
+                <img class="product__slider-img" src="images/house.svg" alt="">
+                Домик</div>
+              <div class="product__slider-icon"> 
+                <img class="product__slider-img" src="images/game.svg" alt="">
+                Игровой комплекс - 3 яруса</div>
+              <div class="product__slider-icon"> 
+                <img class="product__slider-img" src="images/scratching.svg" alt=""> Когтеточка</div>
+              <p>Цена за сутки: <span>600₽</span> </p>
+              <div>
+                <button class="product__slider-btn btn" type="button" data-modal="#becomeClientModal">Забронировать</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!--rooms-->
-      <section class="rooms page-section" id="intro">
+      <section class="rooms page-section" id="rooms">
         <div class="container">
           <h2 class="rooms__title title">Другие номера</h2>
           <div class="rooms__slider">

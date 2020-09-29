@@ -65,6 +65,12 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider-class',
+		responsive: [{
+			breakpoint: 941,
+			settings: {
+				vertical: false,
+			}
+		}, ]
 	});
 
 	$('.slider-class').slick({
@@ -76,7 +82,14 @@ $(function () {
 		slidesToShow: 1,
 		infinite: true,
 		swipe: true,
-		asNavFor: '.preview-class'
+		asNavFor: '.preview-class',
+		responsive: [{
+			breakpoint: 941,
+			settings: {
+				autoplay: true,
+				autoplaySpeed: 7000,
+			}
+		}, ]
 	});
 
 	/* Modals */
