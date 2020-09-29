@@ -147,7 +147,7 @@ body.show-header__menu .header,
 	&:after {
 		position: absolute;
 		content: '';
-		background: url('../images/paw.svg') no-repeat;
+		background: url('../images/paw.svg') center/contain no-repeat;
 		width: 36px;
 		height: 36px;
 		right: 7px;
@@ -926,7 +926,7 @@ body.show-header__menu .header,
 	&:after {
 		content: '';
 		position: absolute;
-		background: url('../images/paw-big.svg') no-repeat;
+		background: url('../images/paw-big.svg') center/contain no-repeat;
 		width: 405px;
 		height: 386px;
 		top: 40px;
@@ -1032,6 +1032,7 @@ body.show-header__menu .header,
 	display: none;
 	overflow-y: auto;
 	padding: 75px 15px;
+
 
 	&__inner {
 		display: flex;
@@ -1183,10 +1184,11 @@ body.show-header__menu .header,
 	p {
 		margin-right: 18px;
 	}
+}
 
-	label {
-		margin-right: 6px;
-	}
+.first-day,
+.last-day {
+	margin-right: 6px;
 }
 
 .form__groups {

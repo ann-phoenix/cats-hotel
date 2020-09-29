@@ -377,8 +377,6 @@
 	}
 
 	//room
-
-
 	.product__slider-previewimg {
 		max-width: 60px;
 		height: 70px;
@@ -404,6 +402,40 @@
 
 	.room-wrapper {
 		width: 100%;
+	}
+
+	//modal
+	.form__groups {
+		flex-direction: column;
+	}
+
+	.form__groups p {
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+
+	.form__groups-col {
+		flex-direction: column;
+	}
+
+	.form__input-small {
+		margin-bottom: 20px;
+	}
+
+	.first-day {
+		margin-right: 26px;
+	}
+
+	.last-day {
+		margin-right: 15px;
+	}
+
+	.modal__title {
+		margin-bottom: 30px;
+	}
+
+	.form__btn {
+		margin: 30px auto 70px;
 	}
 
 }
@@ -500,5 +532,39 @@
 
 	.product__slider-imgbig {
 		height: 245px;
+	}
+
+	//modal
+	.modal__content {
+		padding: 70px 35px 0;
+	}
+
+	.modal__close {
+		right: 25px;
+	}
+
+	.form__input {
+		padding: 15px;
+	}
+
+	.form__btn {
+		padding: 17px 47px 18px 14px;
+		font-size: 14px;
+	}
+
+	.modal__title-thanks {
+		margin-bottom: 20px;
+	}
+
+	.form__btn.modal__btn-thanks {
+		margin: 20px auto 43px;
+		padding: 10px 50px 10px 15px;
+	}
+
+	.modal__thanks {
+		.btn:after {
+			width: 30px;
+			height: 30px;
+		}
 	}
 }
