@@ -83,13 +83,6 @@ $(function () {
 		infinite: true,
 		swipe: true,
 		asNavFor: '.preview-class',
-		responsive: [{
-			breakpoint: 941,
-			settings: {
-				autoplay: true,
-				autoplaySpeed: 7000,
-			}
-		}, ]
 	});
 
 	/* Modals */
