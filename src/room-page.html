@@ -31,7 +31,6 @@
     </div>
   </header>
   
-  
   <div class="wrapper">
     <div class="content">
       <!--room-->
@@ -88,7 +87,7 @@
         <div class="container">
           <h2 class="rooms__title title">Другие номера</h2>
           <div class="rooms__slider">
-            <a class="rooms__slide" href="#">
+            <div class="rooms__slide">
               <div class="rooms__slide-img" style="background-image: url(images/slide-1.jpg);"></div>
               <div class="rooms__slide-box">
                 <h6 class="rooms__slide-title">Эконом плюс</h6>
@@ -97,10 +96,10 @@
                   <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) — 90х100х180 см</span> </li>
                   <li class="rooms__slide-item"> <span>Цена за сутки: 200₽</span> </li>
                 </ul>
-                <button class="rooms__slide-button btn">Забронировать</button>
+                <a class="rooms__slide-button btn" href="#">Забронировать</a>
               </div>
-            </a>
-            <a class="rooms__slide" href="#">
+            </div>
+            <div class="rooms__slide">
               <div class="rooms__slide-img" style="background-image: url(images/slide-2.jpg);"></div>
               <div class="rooms__slide-box">
                 <h6 class="rooms__slide-title">Комфорт</h6>
@@ -109,10 +108,10 @@
                   <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) - 100х125х180 см</span> </li>
                   <li class="rooms__slide-item"> <span>Цена за сутки: 250₽</span> </li>
                 </ul>
-                <button class="rooms__slide-button btn">Забронировать</button>
+                <a class="rooms__slide-button btn" href="#">Забронировать</a>
               </div>
-            </a>
-            <a class="rooms__slide" href="#">
+            </div>
+            <div class="rooms__slide">
               <div class="rooms__slide-img" style="background-image: url(images/slide-3.jpg);"></div>
               <div class="rooms__slide-box">
                 <h6 class="rooms__slide-title">Сьют</h6>
@@ -121,9 +120,9 @@
                   <li class="rooms__slide-item"> <span>Размеры (ШхГхВ) - 125х125х180 см</span> </li>
                   <li class="rooms__slide-item"> <span>Цена за сутки: 350₽</span> </li>
                 </ul>
-                <button class="rooms__slide-button btn">Забронировать</button>
+                <a class="rooms__slide-button btn" href="#">Забронировать</a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -170,7 +169,7 @@
           <div class="contacts__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3003897550865!2d30322247032095124!3d59.93876638733359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600465578258!5m2!1sru!2sru"
-              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
       </section>
@@ -200,11 +199,11 @@
             <div class="form__groups-col">
               <div class="form__group">
                 <label class="first-day" for="firstday">с</label>
-                <input class="form__input form__input-small" type="text" placeholder="26.01.2020" required>
+                <input class="form__input form__input-small"  id="firstday" type="text" placeholder="26.01.2020" required>
               </div>
               <div class="form__group">
                 <label class="last-day" for="lastday">по</label>
-                <input class="form__input form__input-small" type="text" placeholder="26.02.2020" required>
+                <input class="form__input form__input-small" id="lastday" type="text" placeholder="26.02.2020" required>
               </div>
             </div>
           </div>
